@@ -1,0 +1,18 @@
+.container1 {
+    background-color: rgb(245, 246, 255);
+    min-height: 100vh;
+}
+
+h1 {
+    margin-left: 30px;
+    padding-top: 30px;
+}
+
+h5 {
+    margin-left: -18px;
+}
+
+ul {
+    margin: 30px;
+    font-style: italic;
+}

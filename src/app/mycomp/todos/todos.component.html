@@ -1,0 +1,12 @@
+<div class="mycont">
+    <div class="container">
+        <h1 class="text-center py-3">TODOLIST BY SHUBHAM</h1>
+        <app-add (Add_event)="OnAdd($event)"></app-add>
+        <div class="tb" *ngIf="this.todos.length===0; else elseBlock">Your List is Empty!!</div>
+        <ng-template #elseBlock>
+            <div *ngFor="let item of todos; index as i" class="border-bottom my-1">
+                <app-items [todos_item]="item" (delete_event)="OnDelete($event)" (checkToggleEvent)="onCheck($event)"></app-items>
+            </div>
+        </ng-template>
+    </div>
+</div>
